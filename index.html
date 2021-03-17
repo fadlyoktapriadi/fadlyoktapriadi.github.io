@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/tailwinds.css">
+    <link rel="stylesheet" href="public/corausel.css">
+    <title>My Portfolio</title>
+</head>
+
+<body class="font-fresca overflow-x-hidden">
+    <header class="w-screen bg-primary">
+        <nav class="w-screen shadow-lg z-50 px-10 fixed bg-primary top-0 rounded-lg">
+
+            <div class="md:hidden flex items-center text-xl uppercase py-6 float-right">
+                <button id="slider">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="menuSlider  md:flex hidden  justify-end flex-col md:flex-row py-4
+                items-center text-xl uppercase mx-auto text-gray-600">
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#home">Home</a></li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#tentang">Tentang</li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#project">Project</li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#hubungi">Hubungi</li>
+            </ul>
+        </nav>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-10 pt-20 pb-10 justify-items-center items-center text-gray-600">
+            <img src="public/img/foto.png" class="w-1/2" alt="">
+            <div class="md:-ml-10 -ml-0">
+                <h4 class="text-2xl">Halo saya,</h4>
+                <h1 class="font-bold text-5xl mt-3">Fadly Oktapriadi</h1>
+                <div class="w-full h-5 border-t-4 border-secondary mt-5"></div>
+                <h4 class="text-md text-2xl md:text-left text-center">Fullstack Web Developer</h4>
+            </div>
+        </div>
+        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+    </header>
+
+    <section class="tentang">
+        <h1 class="text-center uppercase text-2xl text-secondary">Tentang Saya</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-10 mt-4 justify-items-center items-center pb-10">
+
+            <img src="public/img/foto 2.png" class=" max-h-64 rounded-xl shadow-xl" alt="">
+
+            <p class="md:text-xl text-md md:mt-0 mt-7 text-justify">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit.
+                Deleniti
+                non
+                quaerat fugit.
+                Tenetur omnis
+                quas nemo voluptate aliquam ea delectus, fugit laudantium perferendis, rem totam adipisci assumenda
+                aspernatur vitae eaque eum eos, minima nulla tempore? Assumenda consectetur voluptates pariatur
+                aliquam.</p>
+
+        </div>
+        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+    </section>
+
+    <section class="Pendidikan w-screen bg-primary">
+        <div class="grid grid-cols-1 md:grid-cols-2 mx-10 justify-items-center items-center pb-10">
+
+            <div class="relative w-1/2 m-8 mt-20">
+                <h1 class="uppercase text-2xl text-secondary -mt-10 pb-3">Pendidikan</h1>
+                <div class="border-r-2 border-secondary absolute h-full top-1" style="left: 9px"></div>
+                <ul class="list-none m-0 p-0">
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">SMKN 1 Pandeglang</div>
+                        </div>
+                        <div class="ml-9">
+                            (Rekayasa Perangkat Lunak)
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Pelatihan Digital Talent Scholarship Menkominfo :
+                                Junior Web Development</div>
+                        </div>
+                        <div class="ml-9">
+                            (Juli - 2019)
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Universitas Banten Jaya</div>
+                        </div>
+                        <div class="ml-9">
+                            (Teknik Informatika)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative w-1/2 m-8 mt-20">
+                <h1 class="uppercase text-2xl text-secondary -mt-10 pb-3">Pengalaman Kerja</h1>
+                <div class="border-r-2 border-secondary absolute h-full top-1" style="left: 9px"></div>
+                <ul class="list-none m-0 p-0">
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Prakerin di Dinas Pendidikan dan Kebudayaan Provinsi
+                                Banten</div>
+                        </div>
+                        <div class="ml-9">
+                            (2018)
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Staff Administrator di CV. Ada Guna Megah</div>
+                        </div>
+                        <div class="ml-9">
+                            (2020)
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Honorer di Pengadilan Negeri Serang</div>
+                        </div>
+                        <div class="ml-9">
+                            (2020 - 2021)
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+    </section>
+    <section class="skill">
+        <h1 class="text-center uppercase text-2xl text-secondary">Skill & Tools</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 mx-10 justify-items-center items-center pb-10 gap-2">
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/html.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">HTML</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/css.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">CSS</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/js.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">javascript</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/php.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">PHP</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/bootstrap.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/tailwind.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Tailwind</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/codeigniter.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Codeigniter</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/laravel.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Laravel</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/git.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Git</span>
+                </div>
+            </div>
+
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min  col-start-2">
+                <div class="card-body flex md:flex-row flex-col items-center">
+                    <img src="public/img/figma.png" class="h-20 w-20 mr-4" alt="">
+                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Figma</span>
+                </div>
+            </div>
+
+        </div>
+        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+    </section>
+    <section class="project w-screen bg-primary">
+        <h1 class="text-center uppercase text-2xl text-secondary">Project</h1>
+
+
+        <div class="carousel relative bg-primary">
+            <div class="carousel-inner relative overflow-hidden w-1/2 mx-auto">
+                <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                    <div class="block h-full w-full  text-secondary text-center">
+                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak tanah</h1>
+                        <img src="public/img/1.png" class="" alt="">
+                    </div>
+                </div>
+                <label for="carousel-3"
+                    class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2"
+                    class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                    <div class="block h-full w-full  text-secondary text-center">
+                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak Goreng</h1>
+                        <img src="public/img/1.png" class="" alt="">
+                    </div>
+                </div>
+                <label for="carousel-1"
+                    class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3"
+                    class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                    <div class="block h-full w-full  text-secondary text-center">
+                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak Angin</h1>
+                        <img src="public/img/1.png" class="" alt="">
+                    </div>
+                </div>
+                <label for="carousel-2"
+                    class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1"
+                    class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+
+
+
+        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+    </section>
+    <section class="kontak mb-10">
+        <h1 class="text-center uppercase text-2xl text-secondary">Hubungi</h1>
+        <form action="" class="mt-4">
+            <div class="grid grid-cols-1 text-center gap-3">
+                <div class="form">
+                    <input type="text" name="nama" class="w-1/3 h-14 p-3 border-primary border-2"
+                        placeholder="Nama Lengkap">
+                </div>
+                <div class="form">
+                    <textarea type="text" name="note" class="w-1/3 p-3  border-primary border-2" placeholder="Pesan"
+                        rows="10"></textarea>
+                </div>
+                <div class="">
+                    <button type="submit" class="w-1/3 h-10 bg-secondary text-white rounded-md text-white
+                        justify-self-end">Kirim</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="w-screen h-10 text-center text-white bg-dark leading-10">
+        2021 © created : Fadly Oktapriadi <span class="text-red-500">❤</span>
+    </footer>
+    <script src="public/script.js"></script>
+</body>
+
+</html>
