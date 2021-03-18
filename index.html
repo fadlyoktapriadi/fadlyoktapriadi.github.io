@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="public/tailwinds.css">
     <!-- <link rel="stylesheet" href="public/corausel.css"> -->
     <style>
+        html {
+  scroll-behavior: smooth;
+}
         .carousel-open:checked + .carousel-item {
             position: static;
             opacity: 100;
@@ -15,6 +18,7 @@
         .carousel-item {
             -webkit-transition: opacity 0.6s ease-out;
             transition: opacity 0.6s ease-out;
+            height: 80vh;
         }
         #carousel-1:checked ~ .control-1,
         #carousel-2:checked ~ .control-2,
@@ -37,12 +41,18 @@
         #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
             color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
         }
+
+        @media only screen and (max-width: 600px) {
+            .carousel-item {
+            height: 50vh;
+        }
+        }
     </style>
     <title>My Portfolio</title>
 </head>
 
 <body class="font-fresca overflow-x-hidden">
-    <header class="w-screen bg-primary">
+    <header id="home" class="w-screen bg-primary">
         <nav class="w-screen shadow-lg z-50 px-10 fixed bg-primary top-0 rounded-lg">
 
             <div class="md:hidden flex items-center text-xl uppercase py-6 float-right">
@@ -58,9 +68,9 @@
             <ul class="menuSlider md:flex hidden md:justify-end flex-col md:flex-row py-4
                 items-center text-xl uppercase mx-auto text-gray-600">
                 <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#home">Home</a></li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#tentang">Tentang</li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#project">Project</li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#hubungi">Hubungi</li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#tentang">Tentang</a></li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#project">Project</a></li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#hubungi">Hubungi</a></li>
             </ul>
         </nav>
 
@@ -73,17 +83,17 @@
                 <h4 class="text-md text-2xl md:text-left text-center">Fullstack Web Developer</h4>
             </div>
         </div>
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave.png" id="tentang" class="w-screen bg-no-repeat bg-cover" alt="">
     </header>
 
-    <section class="tentang">
+    <section>
         <h1 class="text-center uppercase text-2xl text-secondary">Tentang Saya</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 mx-10 mt-4 justify-items-center items-center pb-10">
 
             <img src="public/img/foto 2.png" class=" max-h-56 rounded-xl shadow-xl" alt="">
 
-            <p class="md:text-xl text-md md:mt-0 mt-7 text-justify">Lorem ipsum dolor sit amet consectetur
+            <p class="md:text-xl text-md md:mt-0 mt-7 text-justify mr-9">Lorem ipsum dolor sit amet consectetur
                 adipisicing
                 elit.
                 Deleniti
@@ -95,10 +105,10 @@
                 aliquam.</p>
 
         </div>
-        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave2.png" id="pendidikan" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
 
-    <section class="Pendidikan w-screen bg-primary">
+    <section class="w-screen bg-primary">
         <div class="grid grid-cols-1 md:grid-cols-2 mx-10 justify-items-center items-center pb-10">
 
             <div class="relative w-1/2 m-8 mt-20">
@@ -127,10 +137,10 @@
                     <li class="mb-2">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
-                            <div class="flex-1 ml-4 font-medium">Universitas Banten Jaya</div>
+                            <div class="flex-1 ml-4 font-medium">Universitas ......</div>
                         </div>
                         <div class="ml-9">
-                            (Teknik Informatika)
+                            (Teknik ......)
                     </li>
                 </ul>
             </div>
@@ -158,96 +168,106 @@
                             (2020)
                         </div>
                     </li>
-                    <li class="mb-2">
+                    <!-- <li class="mb-2">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
-                            <div class="flex-1 ml-4 font-medium">Honorer di Pengadilan Negeri Serang</div>
+                            <div class="flex-1 ml-4 font-medium">TKS di Pengadilan Negeri Serang</div>
                         </div>
                         <div class="ml-9">
                             (2020 - 2021)
+                        </div>
+                    </li> -->
+
+                    <li class="mb-2">
+                        <div class="flex items-center mb-1">
+                            <div class="bg-secondary rounded-full h-5 w-5"></div>
+                            <div class="flex-1 ml-4 font-medium">Kuli Proyek</div>
+                        </div>
+                        <div class="ml-9">
+                            (2020 - Sekarang)
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave.png" id="skill" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
-    <section class="skill">
+    <section >
         <h1 class="text-center uppercase text-2xl text-secondary">Skill & Tools</h1>
         <div class="grid grid-cols-2 md:grid-cols-4 mx-10 justify-items-center items-center pb-10 gap-2">
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/html.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/html.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">HTML</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/css.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/css.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">CSS</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/js.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/js.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">javascript</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/php.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/php.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">PHP</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/bootstrap.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/bootstrap.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Bootstrap</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/tailwind.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/tailwind.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Tailwind</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/codeigniter.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/codeigniter.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Codeigniter</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/laravel.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/laravel.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Laravel</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/git.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/git.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Git</span>
                 </div>
             </div>
 
             <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min  col-start-2">
                 <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/figma.png" class="md:h-20 md:w-20 h-10 w-10 mr-4" alt="">
+                    <img src="public/img/figma.png" class="md:h-20 md:w-20 h-10 w-15 mr-4" alt="">
                     <span class="md:ml-3 md:text-md text-sm -ml-3 md:mt-0 mt-3">Figma</span>
                 </div>
             </div>
 
         </div>
-        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave2.png" id="project" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
     <section class="project w-screen bg-primary leading-normal tracking-normal">
         <h1 class="text-center uppercase text-2xl text-secondary py-4">Project</h1>
@@ -258,7 +278,7 @@
             <div class="carousel-inner relative overflow-hidden w-full">
               <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0">
                     <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
                         <h1 class="text-gray-600 text-xl">Sistem Informasi Manajemen Rumah Sakit</h1>
                         <img src="public/img/slide1.png" class="bg-cover  md:mx-44 mx-0" alt="">
@@ -269,7 +289,7 @@
                 
                 <!--Slide 2-->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0">
                     <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
                         <h1 class="text-gray-600 text-xl">Sistem Informasi Manajemen Kue Kering Pack Rahmat</h1>
                         <img src="public/img/slide2.png" class="bg-cover  md:mx-44 mx-0" alt="">
@@ -280,7 +300,7 @@
                 
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
+                <div class="carousel-item absolute opacity-0">
                     <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
                         <h1 class="text-gray-600 text-xl">Sistem Informasi Warga Desa</h1>
                         <img src="public/img/slide3.png" class="bg-cover  md:mx-44 mx-0" alt="">
@@ -307,25 +327,25 @@
         <!-- ENDCORAUSEL -->
 
 
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover mt-7" alt="">
+        <img src="public/img/wave.png" id="hubungi" class="w-screen bg-no-repeat bg-cover mt-7" alt="">
     </section>
-    <section class="kontak mb-10">
+    <section class="mb-10">
         
         <h1 class="text-center uppercase text-2xl text-secondary">Hubungi</h1>
         <form action="https://api.whatsapp.com/send" method="get" class="mt-4">
             <div class="grid grid-cols-1 text-center gap-3">
                 <input type="hidden" name="phone" value="6289514347848">
                 <div class="form">
-                    <input type="text" name="nama" class="md:w-1/3 w-1/2 h-14 p-3 border-primary border-2"
+                    <input type="text" name="nama" class="md:w-1/3 w-1/2 h-14 p-3 shadow-md border-primary border-2"
                         placeholder="Nama Lengkap">
                 </div>
                 <div class="form">
-                    <textarea type="text" name="text" class="md:w-1/3 w-1/2 p-3  border-primary border-2" placeholder="Pesan"
+                    <textarea type="text" name="text" class="md:w-1/3 w-1/2 p-3 shadow-md border-primary border-2" placeholder="Pesan"
                         rows="10"></textarea>
                 </div>
                 <div class="">
                     <button type="submit" class="md:w-1/3 w-1/2 h-10 bg-secondary text-white rounded-md text-white
-                        justify-self-end">Kirim</button>
+                        justify-self-end shadow-lg">Kirim</button>
                 </div>
             </div>
         </form>
