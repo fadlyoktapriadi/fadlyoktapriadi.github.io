@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/tailwinds.css">
-    <link rel="stylesheet" href="public/corausel.css">
     <title>My Portfolio</title>
 </head>
 
 <body class="font-fresca overflow-x-hidden">
-    <header class="w-screen bg-primary">
+    <header id="home" class="w-screen bg-primary">
         <nav class="w-screen shadow-lg z-50 px-10 fixed bg-primary top-0 rounded-lg">
 
             <div class="md:hidden flex items-center text-xl uppercase py-6 float-right">
@@ -24,12 +23,12 @@
                 </button>
             </div>
 
-            <ul class="menuSlider  md:flex hidden  justify-end flex-col md:flex-row py-4
+            <ul class="menuSlider md:flex hidden md:justify-end flex-col md:flex-row py-4
                 items-center text-xl uppercase mx-auto text-gray-600">
                 <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#home">Home</a></li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#tentang">Tentang</li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#project">Project</li>
-                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#hubungi">Hubungi</li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#tentang">Tentang</a></li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#project">Project</a></li>
+                <li class=" md:mr-14 md:mb-0 mb-3 hover:text-gray-900"><a href="#hubungi">Hubungi</a></li>
             </ul>
         </nav>
 
@@ -42,17 +41,17 @@
                 <h4 class="text-md text-2xl md:text-left text-center">Fullstack Web Developer</h4>
             </div>
         </div>
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave.png" id="tentang" class="w-screen bg-no-repeat bg-cover" alt="">
     </header>
 
-    <section class="tentang">
+    <section>
         <h1 class="text-center uppercase text-2xl text-secondary">Tentang Saya</h1>
 
         <div class="grid grid-cols-1 md:grid-cols-2 mx-10 mt-4 justify-items-center items-center pb-10">
 
-            <img src="public/img/foto 2.png" class=" max-h-64 rounded-xl shadow-xl" alt="">
+            <img src="public/img/foto 2.png" class=" max-h-56 rounded-xl shadow-xl" alt="">
 
-            <p class="md:text-xl text-md md:mt-0 mt-7 text-justify">Lorem ipsum dolor sit amet consectetur
+            <p class="md:text-xl text-md md:mt-0 mt-7 text-justify md:mr-9 mr-0">Lorem ipsum dolor sit amet consectetur
                 adipisicing
                 elit.
                 Deleniti
@@ -64,17 +63,18 @@
                 aliquam.</p>
 
         </div>
-        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave2.png" id="pendidikan" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
 
-    <section class="Pendidikan w-screen bg-primary">
-        <div class="grid grid-cols-1 md:grid-cols-2 mx-10 justify-items-center items-center pb-10">
+    <section class="w-screen bg-primary">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 mx-10 md:justify-items-center md:items-center justify-items-start items-start pb-10">
 
-            <div class="relative w-1/2 m-8 mt-20">
+            <div class="relative w-1/2  mt-20">
                 <h1 class="uppercase text-2xl text-secondary -mt-10 pb-3">Pendidikan</h1>
                 <div class="border-r-2 border-secondary absolute h-full top-1" style="left: 9px"></div>
                 <ul class="list-none m-0 p-0">
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
                             <div class="flex-1 ml-4 font-medium">SMKN 1 Pandeglang</div>
@@ -83,7 +83,7 @@
                             (Rekayasa Perangkat Lunak)
                         </div>
                     </li>
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
                             <div class="flex-1 ml-4 font-medium">Pelatihan Digital Talent Scholarship Menkominfo :
@@ -93,22 +93,22 @@
                             (Juli - 2019)
                         </div>
                     </li>
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
-                            <div class="flex-1 ml-4 font-medium">Universitas Banten Jaya</div>
+                            <div class="flex-1 ml-4 font-medium">Universitas ......</div>
                         </div>
                         <div class="ml-9">
-                            (Teknik Informatika)
+                            (Teknik ......)
                     </li>
                 </ul>
             </div>
 
-            <div class="relative w-1/2 m-8 mt-20">
+            <div class="relative w-1/2  mt-20">
                 <h1 class="uppercase text-2xl text-secondary -mt-10 pb-3">Pengalaman Kerja</h1>
-                <div class="border-r-2 border-secondary absolute h-full top-1" style="left: 9px"></div>
+                <div class="border-r-2 border-secondary absolute h-full top-1 md:mt-0 mt-7" style="left: 9px"></div>
                 <ul class="list-none m-0 p-0">
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
                             <div class="flex-1 ml-4 font-medium">Prakerin di Dinas Pendidikan dan Kebudayaan Provinsi
@@ -118,7 +118,7 @@
                             (2018)
                         </div>
                     </li>
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
                             <div class="flex-1 ml-4 font-medium">Staff Administrator di CV. Ada Guna Megah</div>
@@ -127,123 +127,147 @@
                             (2020)
                         </div>
                     </li>
-                    <li class="mb-2">
+                    <li class="mb-2 md:w-auto w-64">
                         <div class="flex items-center mb-1">
                             <div class="bg-secondary rounded-full h-5 w-5"></div>
-                            <div class="flex-1 ml-4 font-medium">Honorer di Pengadilan Negeri Serang</div>
+                            <div class="flex-1 ml-4 font-medium">Kuli Proyek</div>
                         </div>
                         <div class="ml-9">
-                            (2020 - 2021)
-                        </div>
+                            (2020 - Sekarang)
                     </li>
                 </ul>
             </div>
+
         </div>
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave.png" id="skill" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
-    <section class="skill">
+    <section>
         <h1 class="text-center uppercase text-2xl text-secondary">Skill & Tools</h1>
         <div class="grid grid-cols-2 md:grid-cols-4 mx-10 justify-items-center items-center pb-10 gap-2">
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/html.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">HTML</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/html.svg" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">HTML</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/css.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">CSS</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/css.svg" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">CSS</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/js.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">javascript</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/js.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Javascript</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/php.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">PHP</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/php.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">PHP</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/bootstrap.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Bootstrap</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/bootstrap.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Bootstrap</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/tailwind.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Tailwind</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/tailwind.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Tailwind</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/codeigniter.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Codeigniter</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/codeigniter.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Codeigniter</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/laravel.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Laravel</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/laravel.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Laravel</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min ">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/git.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Git</span>
+            <div
+                class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center md:col-start-2 col-start-1">
+                <div class="mb-1">
+                    <img src="public/img/git.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Git</span>
                 </div>
             </div>
 
-            <div class="card m-4 p-10 bg-white shadow-md rounded-md min-w-min  col-start-2">
-                <div class="card-body flex md:flex-row flex-col items-center">
-                    <img src="public/img/figma.png" class="h-20 w-20 mr-4" alt="">
-                    <span class="md:ml-3 -ml-3 md:mt-0 mt-3">Figma</span>
+            <div class="card m-4 p-10 bg-white shadow-md rounded-md flex md:flex-row flex-col items-center">
+                <div class="mb-1">
+                    <img src="public/img/figma.png" class="md:h-20 md:w-20 h-10 w-14 md:mr-4 mr-0" alt="">
+                </div>
+                <div class="mt-2">
+                    <span class="md:ml-2 md:text-md md:text-lg text-md md:mt-0 mt-3">Figma</span>
                 </div>
             </div>
 
         </div>
-        <img src="public/img/wave2.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave2.png" id="project" class="w-screen bg-no-repeat bg-cover" alt="">
     </section>
-    <section class="project w-screen bg-primary">
-        <h1 class="text-center uppercase text-2xl text-secondary">Project</h1>
+    <section class="project w-screen bg-primary leading-normal tracking-normal">
+        <h1 class="text-center uppercase text-2xl text-secondary py-4">Project</h1>
 
 
-        <div class="carousel relative bg-primary">
-            <div class="carousel-inner relative overflow-hidden w-1/2 mx-auto">
+        <!-- CORAUSEL -->
+        <div class="carousel relative bg-white">
+            <div class="carousel-inner relative overflow-hidden w-full">
                 <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                     checked="checked">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                    <div class="block h-full w-full  text-secondary text-center">
-                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak tanah</h1>
-                        <img src="public/img/1.png" class="" alt="">
+                <div class="carousel-item absolute opacity-0">
+                    <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
+                        <h1 class="text-gray-600 text-xl">E-Commerce : Book Store (Terintegrasi dengan restAPI
+                            Rajaongkir)</h1>
+                        <img src="public/img/slide1.png" class="bg-cover  md:mx-44 mx-0" alt="">
                     </div>
                 </div>
-                <label for="carousel-3"
+                <label for="carousel-5"
                     class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-2"
                     class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
                 <!--Slide 2-->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                    <div class="block h-full w-full  text-secondary text-center">
-                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak Goreng</h1>
-                        <img src="public/img/1.png" class="" alt="">
+                <div class="carousel-item absolute opacity-0">
+                    <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
+                        <h1 class="text-gray-600 text-xl">E-Commerce : Book Store (Terintegrasi dengan restAPI
+                            Rajaongkir)</h1>
+                        <img src="public/img/slide2.png" class="bg-cover  md:mx-44 mx-0" alt="">
                     </div>
                 </div>
                 <label for="carousel-1"
@@ -253,16 +277,42 @@
 
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:80vh;">
-                    <div class="block h-full w-full  text-secondary text-center">
-                        <h1 class="text-2xl my-3">Sistem Infomasi Pengelolan Minyak Angin</h1>
-                        <img src="public/img/1.png" class="" alt="">
+                <div class="carousel-item absolute opacity-0">
+                    <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
+                        <h1 class="text-gray-600 text-xl">Sistem Informasi E-Raport SMA</h1>
+                        <img src="public/img/slide3.png" class="bg-cover  md:mx-44 mx-0" alt="">
                     </div>
                 </div>
                 <label for="carousel-2"
                     class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-1"
+                <label for="carousel-4"
                     class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 4-->
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
+                        <h1 class="text-gray-600 text-xl">Sistem Informasi E-Raport SMA</h1>
+                        <img src="public/img/slide4.png" class="bg-cover  md:mx-44 mx-0" alt="">
+                    </div>
+                </div>
+                <label for="carousel-3"
+                    class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-5"
+                    class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 5-->
+                <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                    <div class="block h-full w-full bg-primary text-white text-5xl text-center flex flex-col">
+                        <h1 class="text-gray-600 text-xl">E-Commerce : Hasil Panen</h1>
+                        <img src="public/img/slide5.png" class="bg-cover  md:mx-44 mx-0" alt="">
+                    </div>
+                </div>
+                <label for="carousel-4"
+                    class="prev control-5 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1"
+                    class="next control-5 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
                 <!-- Add additional indicators for each slide-->
                 <ol class="carousel-indicators">
@@ -278,30 +328,40 @@
                         <label for="carousel-3"
                             class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
                     </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-4"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-5"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
                 </ol>
 
             </div>
         </div>
+        <!-- ENDCORAUSEL -->
 
 
-
-        <img src="public/img/wave.png" class="w-screen bg-no-repeat bg-cover" alt="">
+        <img src="public/img/wave.png" id="hubungi" class="w-screen bg-no-repeat bg-cover mt-7" alt="">
     </section>
-    <section class="kontak mb-10">
+    <section class="mb-10">
+
         <h1 class="text-center uppercase text-2xl text-secondary">Hubungi</h1>
-        <form action="" class="mt-4">
+        <form action="https://api.whatsapp.com/send" method="get" class="mt-4">
             <div class="grid grid-cols-1 text-center gap-3">
+                <input type="hidden" name="phone" value="6289514347848">
                 <div class="form">
-                    <input type="text" name="nama" class="w-1/3 h-14 p-3 border-primary border-2"
+                    <input type="text" name="nama" class="md:w-1/3 w-9/12 h-14 p-3 shadow-md border-primary border-2"
                         placeholder="Nama Lengkap">
                 </div>
                 <div class="form">
-                    <textarea type="text" name="note" class="w-1/3 p-3  border-primary border-2" placeholder="Pesan"
-                        rows="10"></textarea>
+                    <textarea type="text" name="text" class="md:w-1/3 w-9/12 p-3 shadow-md border-primary border-2"
+                        placeholder="Pesan" rows="10"></textarea>
                 </div>
                 <div class="">
-                    <button type="submit" class="w-1/3 h-10 bg-secondary text-white rounded-md text-white
-                        justify-self-end">Kirim</button>
+                    <button type="submit" class="md:w-1/3 w-9/12 h-10 bg-secondary text-white rounded-md text-white
+                        justify-self-end shadow-lg">Kirim</button>
                 </div>
             </div>
         </form>
