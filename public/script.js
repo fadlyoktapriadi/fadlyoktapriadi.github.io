@@ -1,4 +1,4 @@
-const btnSlider = document.querySelector("#button");
+const btnSlider = document.querySelector(".slider");
 const menuSlider = document.querySelector(".menuSlider");
 
 btnSlider.addEventListener("click", function () {
