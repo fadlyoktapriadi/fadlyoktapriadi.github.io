@@ -5,3 +5,5 @@ btnSlider.addEventListener("click", function () {
   menuSlider.classList.toggle("popx");
   menuSlider.classList.toggle("hidden");
 });
+
+AOS.init();
